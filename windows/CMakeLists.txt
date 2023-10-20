@@ -5,13 +5,15 @@
 cmake_minimum_required(VERSION 3.14)
 
 # Project-level configuration.
-set(PROJECT_NAME "libowa_windows")
+set(PROJECT_NAME "libowa_flutter")
 project(${PROJECT_NAME} LANGUAGES CXX)
+
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/../src" "${CMAKE_CURRENT_BINARY_DIR}/shared")
 
 # List of absolute paths to libraries that should be bundled with the plugin.
 # This list could contain prebuilt libraries, or libraries created by an
 # external build triggered from this build file.
 set(libowa_windows_bundled_libraries
-  ${CMAKE_CURRENT_SOURCE_DIR}/oswrapper_audio.dll  
+  $<TARGET_FILE:oswrapper_audio>
   PARENT_SCOPE
 )

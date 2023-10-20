@@ -1,4 +1,4 @@
-name: libowa_windows
+name: libowa_flutter
 description: A new Flutter FFI plugin project.
 version: 0.0.1
 homepage:
@@ -10,14 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
-
-dev_dependencies:
-  ffi: ^2.0.1
-  ffigen: ^6.1.2
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^2.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
